@@ -1,0 +1,466 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="ru-ru"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+
+        
+
+        
+            <language>ru-ru</language>
+        
+
+        
+            <lastBuildDate>Sun, 11 May 2025 21:06:54 MSK</lastBuildDate>
+        
+
+        
+            <link>http://localhost:1313/</link>
+        
+
+        
+            <atom:link href="http://localhost:1313/rss.xml" hreflang="ru-ru" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="http://localhost:1313/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="http://localhost:1313/rss.xml" hreflang="ru-ru" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>Веб-сайт проекта &ldquo;GAR-5. Экскурсия по робостанции&rdquo;</title>
+        
+
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>Завершена разработка приложения &ldquo;Робот-экскурсовод&rdquo; для павильона &ldquo;Робостанция&rdquo; на ВДНХ. Новое приложение позволит посетителям получать интерактивные экскурсии и пользоваться AR-подсказками.</p><p><img src=http://localhost:1313/images/app.avif alt="Разработка приложения"></p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-05-11:/hidden/journal_post3/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/hidden/journal_post3/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/hidden/journal_post3/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sun, 11 May 2025 21:06:54 MSK</pubDate>
+                    
+
+                    
+                        <title>Разработка приложения «Робот-экскурсовод»</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>Разработка мобильного приложения успешно завершена и теперь команда проекта сосредоточится на поддержке и развитии проекта: улучшении функционала, оптимизации работы системы и внедрении новых возможностей.</p><p><img src=http://localhost:1313/images/support.png alt=Поддержка_проекта></p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-05-11:/hidden/journal_post2/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/hidden/journal_post2/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/hidden/journal_post2/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sun, 11 May 2025 20:52:41 MSK</pubDate>
+                    
+
+                    
+                        <title>Поддержка приложения GAR-5</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>Идея создания виртуального гида возникла с целью сделать музейные экспозиции более привлекательными и понятными для детской аудитории.</p><p>«Робот-экскурсовод» представляет собой мобильное приложение с 3D-моделью дружелюбного робота, который знакомится с юными посетителями и в интерактивной форме рассказывает им об экспонатах. Пользователи могут в произвольном порядке изучать заинтересовавшие их объекты, сканируя QR-коды и получая информацию в текстовом, аудио и видео форматах.</p><p><img src=http://localhost:1313/images/3d_robot.png alt=3D_Модель></p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-05-11:/hidden/journal_post1/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/hidden/journal_post1/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/hidden/journal_post1/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sun, 11 May 2025 20:26:05 MSK</pubDate>
+                    
+
+                    
+                        <title>3D-модель «Робота-экскурсовода»</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>Проект GAR-5 &ldquo;Экскурсия по Робостанции&rdquo; — это мобильное приложение-гид для посетителей младшего школьного возраста павильона &ldquo;Робостанция&rdquo; на ВДНХ. GAR-5 предлагает получить им полезную информацию о роботах с помощью робота-экскурсовода в своем телефоне.</p><p><img src=http://localhost:1313/images/robot1.jpg alt="Один из роботов робостанции"></p><p>С помощью AR-анимации и адаптированных аудиорассказов дети младшего школьного возраста в доступной форме узнают о технологиях, взаимодействуют с экспонатами и делают запоминающиеся фото с виртуальными роботами.</p><p>Проект разрабатывается студентами и сочетает образовательную функцию с цифровыми развлечениями, делая посещение выставки более современным и вовлекающим.</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-05-11:/posts/about-project/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/posts/about-project/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/posts/about-project/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sun, 11 May 2025 17:47:21 MSK</pubDate>
+                    
+
+                    
+                        <title>О проекте</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<h2 id=журнал-проекта><em>Журнал проекта &ldquo;GAR-5. Экскурсия по робостанции&rdquo;</em></h2><hr><h2 id=пост1_><a href=http://localhost:1313/hidden/journal_post1/>Студенты Московского Политеха разработали 3D-модель «Робота-экскурсовода»</a>
+<img src=http://localhost:1313/images/3d_robot_post.jpg alt=Пост1_3D_Модель></h2><hr><h2 id=пост2_><a href=http://localhost:1313/hidden/journal_post2/>Летом меняетcя вектор направления проекта с &ldquo;Разработки приложения&rdquo; на &ldquo;Поддержку приложения&rdquo;</a>
+<img src=http://localhost:1313/images/support_post.jpg alt=Пост2_Поддержка_проекта></h2><hr><h2 id=пост3_><a href=http://localhost:1313/hidden/journal_post3/>Завершена разработка приложения «Робота-экскурсовода»"</a>
+<img src=http://localhost:1313/images/app_post.jpg alt=Пост3_Разработка_приложения></h2><hr>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-05-11:/posts/journal/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/posts/journal/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/posts/journal/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sun, 11 May 2025 17:35:25 MSK</pubDate>
+                    
+
+                    
+                        <title>Журнал</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<h2 id=роли-в-команде-проекта-и-их-задачи><em>Роли в команде проекта и их задачи</em></h2><h3 id=программисты>Программисты:</h3><p>Разработка приложения и настройка робота в движке Unity.</p><h3 id=3d-дизайнеры>3D-дизайнеры:</h3><p>Создание 3D модели робота-экскурсовода и создание анимаций для него.</p><h3 id=2d-дизайнеры>2D-Дизайнеры:</h3><p>Создание дизайна рамок для QR-кодов и внешнее оформление</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-05-11:/posts/members/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/posts/members/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/posts/members/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sun, 11 May 2025 17:34:56 MSK</pubDate>
+                    
+
+                    
+                        <title>Участники</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<h2 id=важные-ссылки><em>Важные ссылки</em></h2><p>Ссылка на сайт павильона &ldquo;Робостанция&rdquo;: https://робостанция.рф/</p><p>Ссылка на вики про понятие &ldquo;Робот&rdquo;: <a href=https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82 rel=external>https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82</a></p><p>Ссылка на пост про историю робототехники в СССР: <a href=https://habr.com/ru/companies/rshb/articles/760424/ rel=external>https://habr.com/ru/companies/rshb/articles/760424/</a></p><p>Ссылка на пост про историю робототехники в России: <a href=https://dzen.ru/a/ZSQZVDi7K3J3lHn7 rel=external>https://dzen.ru/a/ZSQZVDi7K3J3lHn7</a></p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-05-11:/posts/resources/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/posts/resources/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/posts/resources/" hreflang="ru-ru" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sun, 11 May 2025 17:33:58 MSK</pubDate>
+                    
+
+                    
+                        <title>Ресурсы</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>
