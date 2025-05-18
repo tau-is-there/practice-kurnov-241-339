@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAR-5. Экскурсия по робостанции</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li.active a {
+            background-color: #3498db;
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 11rem auto 3rem;
+            padding: 0 30px;
+        }
+
+        section {
+            padding: 2.5rem 0;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .section-divider {
+            height: 2px;
+            background: #000;
+            margin: 1.5rem 0;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        .about-project {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-project p {
+            margin-bottom: 1.8rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .team-description {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 3rem 0;
+        }
+
+        .member {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .member:hover {
+            transform: scale(1.03);
+        }
+
+        .member h3 {
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            font-size: 1.5rem;
+        }
+
+        .member p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .journal-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .journal-entry {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            transition: transform 0.3s ease;
+        }
+
+        .journal-entry:hover {
+            transform: translateY(-5px);
+        }
+
+        .entry-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .entry-header h3 {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .journal-entry img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .entry-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .entry-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .entry-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .entry-content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .resources-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .links-list {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .links-list ul {
+            padding-left: 1.5rem;
+        }
+
+        .links-list li {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .links-list a {
+            color: #3498db;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .links-list a:hover {
+            color: #2c3e50;
+            text-decoration: underline;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :target {
+            padding-top: 120px;
+            margin-top: -120px;
+        }
+
+        @media (max-width: 900px) {
+            main {
+                margin-top: 10rem;
+                padding: 0 20px;
+            }
+            
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .about-project, .links-list {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem 0;
+            }
+            
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            main {
+                margin-top: 14rem;
+            }
+            
+            section {
+                padding: 2rem 0;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .journal-entry, .about-project, .links-list {
+                padding: 1.5rem;
+            }
+            
+            .entry-header h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип GAR-5">
+            <h1>GAR-5. Экскурсия по робостанции</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Главная</a></li>
+                <li><a href="#about">О проекте</a></li>
+                <li><a href="#team">Участники</a></li>
+                <li><a href="#journal">Журнал</a></li>
+                <li><a href="#resources">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Инновационная экскурсия в мир робототехники</h2>
+            <p class="intro-text">Проект “GAR-5. Экскурсия по робостанции” от Московского Политеха - это интерактивная экскурсия по павильону “Робостанция”, который находится на ВДНХ. С помощью приложения, разработанного студентами из проекта GAR-5, посетитель сможет с комфортом посетить павильон.</p>
+            
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="about">
+            <div class="about-project">
+                <h2>О проекте</h2>
+                <p>Проект GAR-5 "Экскурсия по Робостанции" - это мобильное приложение-гид для посетителей младшего школьного возраста павильона "Робостанция" на ВДНХ. GAR-5 предлагает получить им полезную информацию о роботах с помощью робота-экскурсовода в своем телефоне.</p>
+                
+                <p>С помощью AR-анимации и адаптированных аудиорассказов дети младшего школьного возраста в доступной форме узнают о технологиях, взаимодействуют с экспонатами и делают запоминающиеся фото с виртуальными роботами. Наша система позволяет каждому ребенку получить персонализированную экскурсию, соответствующую его уровню понимания и интересам.</p>
+                
+                <p>Проект разрабатывается студентами и сочетает образовательную функцию с цифровыми развлечениями, делая посещение выставки более современным и вовлекающим. Мы стремимся сделать изучение робототехники увлекательным и доступным для всех возрастов.</p>
+				
+				<img src="images/gar5.jpg" alt="Проект GAR-5" style="max-width: 100%; border-radius: 8px; margin: 2rem 0; box-shadow: 0 3px 10px">
+            </div>
+            
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="team">
+            <h2>Участники проекта</h2>
+            <p class="team-description">Над проектом GAR-5 работает междисциплинарная команда специалистов, объединяющая экспертов в различных областях технологий и дизайна:</p>
+            
+            <div class="team-members">
+                <article class="member">
+                    <h3>Программисты</h3>
+                    <p>Разработка приложения и настройка робота в движке Unity. Создание алгоритмов навигации, обработки голосовых команд и интеграции с AR-технологиями. Оптимизация производительности системы.</p>
+                </article>
+                
+                <article class="member">
+                    <h3>3D-дизайнеры</h3>
+                    <p>Создание 3D модели робота-экскурсовода и анимаций для него. Разработка визуальных эффектов для дополненной реальности. Моделирование интерактивных элементов экспозиции.</p>
+                </article>
+                
+                <article class="member">
+                    <h3>2D-дизайнеры</h3>
+                    <p>Создание дизайна рамок для QR-кодов и внешнее оформление. Разработка пользовательского интерфейса приложения. Визуальная идентификация проекта и создание маркетинговых материалов.</p>
+                </article>
+            </div>
+            
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="journal">
+            <h2>Журнал проекта</h2>
+
+            <article class="journal-entry">
+                <div class="entry-header">
+                    <h3>Студенты Московского Политеха разработали 3D-модель "Робота-экскурсовода"</h3>
+                </div>
+                <div class="entry-content">
+                    <p>Идея создания виртуального гида возникла с целью сделать музейные экспозиции более привлекательными и понятными для детской аудитории.</p>
+                    
+                    <p>«Робот-экскурсовод» представляет собой мобильное приложение с 3D-моделью дружелюбного робота, который знакомится с юными посетителями и в интерактивной форме рассказывает им об экспонатах. Пользователи могут в произвольном порядке изучать заинтересовавшие их объекты, сканируя QR-коды и получая информацию в текстовом, аудио и видео форматах.</p>
+                    
+                    <img src="images/3d_robot.png" alt="Идея виртуального гида">
+                </div>
+            </article>
+            
+            <article class="journal-entry">
+                <div class="entry-header">
+                    <h3>Меняется вектор направления проекта с "Разработки приложения" на "Поддержку приложения"</h3>
+                </div>
+                <div class="entry-content">
+                    <p>Разработка мобильного приложения успешно завершена и теперь команда проекта сосредоточится на поддержке и развитии проекта: улучшении функционала, оптимизации работы системы и внедрении новых возможностей.</p>
+                    <img src="images/support.jpg" alt="Мобильное приложение">
+                </div>
+            </article>
+            
+            <article class="journal-entry">
+                <div class="entry-header">
+                    <h3>Завершена разработка приложения "Робот-экскурсовод"</h3>
+                </div>
+                <div class="entry-content">
+                    <p>Завершена разработка приложения "Робот-экскурсовод" для павильона "Робостанция" на ВДНХ. Новое приложение позволит посетителям получать интерактивные экскурсии и пользоваться AR-подсказками.</p>
+                    <img src="images/app.avif" alt="Приложение Робот-экскурсовод">
+                </div>
+            </article>
+            
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="resources">
+            <h2>Ресурсы</h2>
+            <p class="resources-intro">Дополнительные материалы и ресурсы, связанные с проектом и робототехникой:</p>
+            
+            <div class="links-list">
+                <ul>
+                    <li>Официальный сайт павильона "Робостанция": <a href="https://робостанция.рф/" target="_blank">https://робостанция.рф/</a></li>
+                    <li>Статья в Википедии о понятии "Робот": <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82" target="_blank">https://ru.wikipedia.org/wiki/Робот</a></li>
+                    <li>Подробный пост про историю робототехники в СССР: <a href="https://habr.com/ru/companies/rshb/articles/760424/" target="_blank">https://habr.com/ru/companies/rshb/articles/760424/</a></li>
+                    <li>Обзор истории робототехники в России: <a href="https://dzen.ru/a/ZSQZVDi7K3J3lHn7" target="_blank">https://dzen.ru/a/ZSQZVDi7K3J3lHn7</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Проект GAR-5. Экскурсия по робостанции</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('nav ul li a');
+            
+            function updateActiveMenu() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= (sectionTop - 180)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === `#${current}`) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', updateActiveMenu);
+            
+            updateActiveMenu();
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
