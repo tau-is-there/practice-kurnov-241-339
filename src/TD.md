@@ -3,4 +3,4 @@
 1. Запускаем проект в любом компиляторе
 
 
-![Что менять](https://[github.com/tau-is-there/practice-kurnov-241-339/src/td1.png)
+![Что менять](https://github.com/tau-is-there/practice-kurnov-241-339/src/td1.png)
